@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Phòng</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <div class="logo">
+            <h2>Luxury Hotel</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="rooms.html">Phòng</a></li>
+                <li><a href="booking.html">Đặt Phòng</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <section class="page-title">
+
+        <h1>Đặt Phòng Khách Sạn</h1>
+
+        <p>Vui lòng điền đầy đủ thông tin bên dưới.</p>
+
+    </section>
+
+
+    <section class="booking-section">
+
+        <form id="bookingForm">
+
+            <label>Họ và Tên</label>
+            <input type="text" id="fullname">
+
+            <label>Số Điện Thoại</label>
+            <input type="text" id="phone">
+
+            <label>Loại Phòng</label>
+            <select id="room">
+                <option>Deluxe Room</option>
+                <option>Premium Room</option>
+                <option>VIP Suite</option>
+                <option>Family Room</option>
+            </select>
+
+            <label>Ngày Nhận Phòng</label>
+            <input type="date" id="checkin">
+
+            <label>Ngày Trả Phòng</label>
+            <input type="date" id="checkout">
+
+            <button type="submit">
+                Xác Nhận Đặt Phòng
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Luxury Hotel</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

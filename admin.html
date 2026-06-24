@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h2>Luxury Hotel Admin</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="rooms.html">Phòng</a></li>
+                <li><a href="booking.html">Đặt Phòng</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="page-title">
+
+        <h1>Quản Lý Khách Sạn</h1>
+
+        <p>Dashboard quản trị hệ thống</p>
+
+    </section>
+
+    <section class="dashboard">
+
+        <div class="dashboard-card">
+            <h2>50</h2>
+            <p>Tổng Phòng</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>35</h2>
+            <p>Phòng Trống</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>15</h2>
+            <p>Đơn Đặt Phòng</p>
+        </div>
+
+    </section>
+
+    <section class="admin-table">
+
+        <h2>CRUD Quản Lý Phòng</h2>
+
+        <div class="room-form">
+
+            <input type="text"
+                   id="roomId"
+                   placeholder="Mã phòng">
+
+            <input type="text"
+                   id="roomName"
+                   placeholder="Tên phòng">
+
+            <input type="text"
+                   id="roomPrice"
+                   placeholder="Giá phòng">
+
+            <button onclick="addRoom()">
+                Thêm Phòng
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Mã Phòng</th>
+
+                    <th>Tên Phòng</th>
+
+                    <th>Giá Phòng</th>
+
+                    <th>Thao Tác</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="roomTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Luxury Hotel</p>
+
+    </footer>
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>
